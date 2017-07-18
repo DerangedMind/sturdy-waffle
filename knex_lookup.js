@@ -1,14 +1,4 @@
 const settings = require('./settings')
-const knex = require('knex')({
-  client: 'pg',
-  connection: {
-    host      : settings.hostname,
-    user      : settings.user,
-    password  : settings.password,
-    database  : settings.database,
-    port      : settings.port,
-    ssl       : settings.ssl
-  }
-})
+const knex = require('knex')(require('./knexfile').development)
 
 module.exports = knex

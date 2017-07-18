@@ -8,11 +8,11 @@ knex('famous_people')
     last_name: insertValue[1],
     birthdate: insertValue[2]
   }, 'id')
-  .then((id) => {
-    console.log(id)
+  .asCallback((err, result) => {
+    if (err) {
+      throw new Error("failed to connect!")
+    }
+    console.log(result.id, 'added to db')
   })
-  .catch((err) => {
-    console.log(err)
-  })  
 
 knex.destroy(()=>{})
