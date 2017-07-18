@@ -1,0 +1,22 @@
+{
+  "name": "sturdy-waffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerangedMind/sturdy-waffle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerangedMind/sturdy-waffle/issues"
+  },
+  "homepage": "https://github.com/DerangedMind/sturdy-waffle#readme",
+  "dependencies": {
+    "pg": "^7.0.0"
+  }
+}
